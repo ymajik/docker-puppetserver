@@ -1,7 +1,9 @@
 FROM ymajik/puppetserver-standalone:stable
 LABEL maintainer="ymajik ymajik@gmail.com"
 
-ENV PUPPETDB_TERMINUS_VERSION="5.1.1"
+ENV PUPPETDB_TERMINUS_VERSION="5.1.1" \
+    PUPPETDB_URL="puppetdb" \
+    PUPPETDB_PORT="8081"
 
 LABEL org.label-schema.vendor="Puppet" \
       org.label-schema.url="https://github.com/ymajik/docker-puppetserver" \
